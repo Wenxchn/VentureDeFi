@@ -19,7 +19,8 @@ class Index extends Component {
 						<a>View Campaign</a>
 					</Link>
 				),
-				fluid: true
+				fluid: true,
+				style: { overflowWrap: 'break-word' }
 			}
 		})
 		return <Card.Group items={items} />
