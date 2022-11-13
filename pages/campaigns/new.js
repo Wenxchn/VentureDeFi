@@ -3,7 +3,7 @@ import { Button, Form, Input, Message } from 'semantic-ui-react'
 import Layout from '../../components/Layout'
 import factory from '../../ethereum/factory'
 import web3 from '../../ethereum/web3'
-import { Router } from '../../routes'
+import { Link, Router } from '../../routes'
 
 class New extends Component {
 	state = {
@@ -40,6 +40,12 @@ class New extends Component {
 						/>
 					</Form.Field>
 					<Message error header="Oops!" content={this.state.errorMessage} />
+					<Link route="/">
+						<a>
+							<Button disabled={this.state.isLoading}>Back</Button>
+						</a>
+					</Link>
+
 					<Button primary loading={this.state.isLoading}>
 						Create!
 					</Button>

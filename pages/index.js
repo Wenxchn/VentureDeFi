@@ -29,15 +29,13 @@ class Index extends Component {
 	render() {
 		return (
 			<Layout>
-				<div>
-					<h3>Open Campaigns</h3>
-					<Link route="/campaigns/new">
-						<a>
-							<Button content="Create Campaign" icon="add circle" primary floated="right" />
-						</a>
-					</Link>
-					{this.renderCampaigns()}
-				</div>
+				<h3>Open Campaigns</h3>
+				<Link route="/campaigns/new">
+					<a>
+						<Button content="Create Campaign" icon="add circle" primary floated="right" />
+					</a>
+				</Link>
+				{this.renderCampaigns()}
 			</Layout>
 		)
 	}

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const Layout = (props) => {
 	return (
-		<Container>
+		<Container style={{ paddingTop: 20 }}>
 			<Head>
 				<link
 					async

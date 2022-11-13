@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { Button, Form, Input, Message } from 'semantic-ui-react'
 import Campaign from '../ethereum/campaign'
 import web3 from '../ethereum/web3'
-import { Router } from '../routes'
+import { Link, Router } from '../routes'
 
 class ContributeForm extends Component {
 	state = {
@@ -39,6 +39,11 @@ class ContributeForm extends Component {
 					/>
 				</Form.Field>
 				<Message error header="Oops!" content={this.state.errorMessage} />
+				<Link route="/">
+					<a>
+						<Button disabled={this.state.isLoading}>Back</Button>
+					</a>
+				</Link>
 				<Button primary loading={this.state.isLoading}>
 					Contribute!
 				</Button>

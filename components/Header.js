@@ -3,21 +3,16 @@ import { Link } from '../routes'
 
 const Header = () => {
 	return (
-		<Menu style={{ marginTop: 10 }}>
+		<div>
 			<Link route="/">
-				<a className="item">VentureDeFi</a>
+				<a className="item" style={{ fontWeight: 'bold', fontSize: 32 }}>
+					VentureDeFi
+				</a>
 			</Link>
-			<Menu.Menu position="right">
-				{/* <Link>Campaigns</Link>
-				<Link>+</Link> */}
-				<Link route="/">
-					<a className="item">Campaigns</a>
-				</Link>
-				<Link route="/campaigns/new">
-					<a className="item">+</a>
-				</Link>
-			</Menu.Menu>
-		</Menu>
+			<div style={{ fontWeight: 'bold', fontSize: 14, marginTop: 5, marginLeft: 5 }}>
+				Crowdfunding through DeFi
+			</div>
+		</div>
 	)
 }
 

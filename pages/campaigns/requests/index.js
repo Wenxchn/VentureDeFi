@@ -50,6 +50,13 @@ class RequestsIndex extends Component {
 						</Button>
 					</a>
 				</Link>
+				<Link route={`/campaigns/${this.props.address}`}>
+					<a>
+						<Button floated="right" style={{ marginBottom: 10 }}>
+							Back
+						</Button>
+					</a>
+				</Link>
 				<Table>
 					<Header>
 						<Row>
