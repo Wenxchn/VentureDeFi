@@ -3,6 +3,7 @@ const Web3 = require('web3')
 const compiledFactory = require('../ethereum/build/CampaignFactory.json')
 require('dotenv').config()
 
+// Make sure to include your own .env and never share your Mnemonic with anyone
 const provider = new HDWalletProvider(process.env.MNEMONIC, process.env.GOERLI_LINK)
 const web3 = new Web3(provider)
 
